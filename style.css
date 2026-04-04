@@ -1,3 +1,4 @@
+/* Base Styles */
 * {
     padding: 0;
     margin: 0;
@@ -16,7 +17,7 @@
 }
 
 .head {
-    height: 80px;
+    height: 15vh;
     width: 100%;
     background-color: var(--white-pure);
     display: flex;
@@ -49,8 +50,6 @@
 
 .login { background-color: transparent; color: var(--primary); border: 2px solid var(--primary); }
 .signup { background-color: var(--accent); color: var(--white-pure); }
-
-/* Desktop Hero */
 .bg1 {
     min-height: calc(100vh - 80px);
     width: 100%;
@@ -84,9 +83,12 @@
     font-weight: 700;
     color: var(--white-pure);
     font-size: 18px;
+    transition: transform 0.3s ease;
+}
+.Get-Started:hover{
+    transform: scale(1.05);
 }
 
-/* Footer */
 footer {
     background: var(--black-soft);
     padding: 50px 8%;
@@ -142,4 +144,81 @@ footer {
 @media (max-width: 480px) {
     .hero-title { font-size: 34px; }
     .authentication { padding: 8px 16px; font-size: 14px; }
+}
+#GetStarted{
+    padding: 14px 24px;
+}
+.contact-container {
+    min-height: 85vh;
+    padding: 60px 10%;
+    background-color: var(--white-off);
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-item {
+    background: var(--white-pure);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.info-item h3 {
+    color: var(--primary);
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.info-item p {
+    color: var(--grey-500);
+    font-size: 1rem;
+} 
+.contact-form {
+    background: var(--white-pure);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: var(--accent);
+}
+
+@media (max-width: 1024px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    .contact-container {
+        padding: 40px 5%;
+    }
 }
