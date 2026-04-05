@@ -20,7 +20,7 @@
     --black-rich: #010b13;
     --primary: #1e3a8a;
     --secondary: #f97316;
-    --accent: #008ECC;  
+    --accent: #008ECC;
     --grey: #64748B;
 }
 
@@ -58,11 +58,11 @@
 }
 
 .login:hover {
-    transform: translateY(-5px) translateX(1px); 
+    transform: translateY(-5px) translateX(1px);
 }
 
 .signup:hover {
-    transform: translateY(-5px) translateX(-1px); 
+    transform: translateY(-5px) translateX(-1px);
 }
 
 .login {
@@ -151,9 +151,11 @@ footer {
 
 .footerdiv {
     cursor: pointer;
-    color: var(--black-onyx); 
+    color: var(--black-onyx);
     font-size: 15px;
     transition: 0.3s;
+    padding: 15px;   
+    border-radius: 20px;
 }
 
 .Copyright {
@@ -170,7 +172,7 @@ footer {
     }
 
     .bg1 {
-        background: var(--white-off);
+        background-image: none;
         justify-content: center;
         text-align: center;
         padding: 60px 5%;
@@ -183,15 +185,43 @@ footer {
         align-items: center;
     }
 
-    .options ul {
+
+    .contact-flex {
         flex-direction: column;
-        gap: 20px;
+    }
+
+    .contact-info {
+        margin-left: 0;
+    }
+
+    .contact-form {
+        margin-right: 0;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 550px) {
     .hero-title {
         font-size: 34px;
+    }
+
+    .contact-flex {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        margin-left: 0;
+    }
+
+    .contact-form {
+        margin-right: 0;
+    }
+    
+    .options ul {
+        flex-direction: column;
+        gap: 20px; 
+    }
+    .head{
+        justify-content: center;
     }
 }
 
@@ -199,6 +229,9 @@ footer {
     min-height: 85vh;
     padding: 60px 10%;
     background-color: var(--white-off);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .contact-header {
@@ -206,18 +239,14 @@ footer {
     margin-bottom: 50px;
 }
 
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 40px;
-    max-width: 1100px;
-    margin: 0 auto;
-}
 
 .contact-info {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-right: 0;
+    max-width: 700px;
+    min-width: 90%; 
 }
 
 .info-item {
@@ -241,6 +270,8 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    width: 500px;
+    min-width: 90%; 
 }
 
 .contact-form input,
@@ -291,10 +322,10 @@ body.dark-theme .login {
 
 body.dark-theme .footer {
     background-color: var(--black-rich);
-    color: var(--white-ghost); 
+    color: var(--white-ghost);
 }
 
-body.dark-theme .info-item, 
+body.dark-theme .info-item,
 body.dark-theme .contact-form {
     background: var(--black-charcoal);
     color: var(--white-pure);
@@ -305,4 +336,39 @@ body.dark-theme .contact-form textarea {
     background-color: var(--black-eerie);
     border-color: var(--grey-dim);
     color: white;
+}
+
+.contact-flex {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 50px;
+    height: 100%;
+    gap: 20px;
+}
+
+body.dark-theme .info-item h3 {
+    color: #008ECC;
+}
+
+body.dark-theme .hero-title {
+    color: #008ECC;
+}
+
+body.dark-theme .footerdiv:hover {
+    color: var(--grey-silver);
+    box-shadow: 0px 0px 20px var(--white-ghost);
+    background-color: var(--white-ghost);
+    border-radius: 20px;
+    color: var();
+}
+.footerdiv:hover{
+    color: white;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
