@@ -4,7 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <meta name="description" content="EduPro Academy - Top-rated courses to help you achieve your academic goals.">
+    <title>EduPro Academy | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,9 +20,33 @@
             <img src="images/Logo.png" alt="EduPro Logo" class="logo">
         </div>
         <div class="righthead">
-            <button class="Get-Started" id="GetStarted">Get Started Today</button>
+            <button class="authentication login">Login</button>
+            <button class="authentication signup">Signup</button>
+            <div class="colormode">
+
+                <svg xmlns="http://w3.org" width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="day">=
+                <circle cx="15" cy="15" r="6" fill="currentColor" />=
+                <line x1="15" y1="1" x2="15" y2="4" />
+                <line x1="15" y1="26" x2="15" y2="29" />
+                <line x1="4.4" y1="4.4" x2="6.5" y2="6.5" />
+                <line x1="23.5" y1="23.5" x2="25.6" y2="25.6" />
+                <line x1="1" y1="15" x2="4" y2="15" />
+                <line x1="26" y1="15" x2="29" y2="15" />
+                <line x1="4.4" y1="25.6" x2="6.5" y2="23.5" />
+                <line x1="23.5" y1="6.5" x2="25.6" y2="4.4" />
+            </svg>
+            <svg xmlns="http://w3.org" width="35" height="35" viewBox="0 0 30 30" fill="currentColor" class="none night">
+                <path
+                d="M21.5 19.5C18.5 21.5 14.5 20.5 12 18C9.5 15.5 8.5 11.5 10.5 8.5C7 9.5 4.5 13 4.5 17C4.5 21.5 8 25 12.5 25C16.5 25 20 21.5 21 18C18 19 21.5 19.5 21.5 19.5Z" />
+            </svg>
+        </div>
+
+        
+
         </div>
     </header>
+
     <main class="contact-container">
     <div class="contact-header">
         <h1 class="hero-title">Get in <span>Touch</span></h1>
@@ -47,8 +77,9 @@
         </form>
     </div>
 </main>
-    <footer>
-        <nav class="options">
+
+    <footer class="footer">
+        <nav class="options"> 
             <ul>
                 <li>
                     <div class="footerdiv">About Us</div>
@@ -56,9 +87,11 @@
                 <li>
                     <div class="footerdiv">Explore</div>
                 </li>
-                <li>
-                    <div class="footerdiv">Contact us</div>
-                </li>
+                <a href="contact.html" style="text-decoration: none;" target="_blank">
+                    <li>
+                        <div class="footerdiv">Contact us</div>
+                    </li>
+                </a>
                 <li>
                     <div class="footerdiv">Earn with us</div>
                 </li>
@@ -66,6 +99,7 @@
         </nav>
         <div class="Copyright">&copy; 2026 EduPro Academy. All Rights Reserved.</div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
